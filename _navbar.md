@@ -1,0 +1,10 @@
+* Links
+    * [Steam](https://steamcommunity.com/id/KiwifruitDev/)
+    * [Discord](https://discord.com/users/728082336536854559)
+    * [GitHub](https://github.com/KiwifruitDev)
+    * [Reddit](https://reddit.com/u/MouseDroidPoW)
+    * [Twitch](https://twitch.tv/kiwifruitdev)
+    * [Twitter](https://twitter.com/KiwifruitDev)
+    * [YouTube](https://www.youtube.com/channel/UCpG4gAtezXxtjgH8k0omDtQ)
+    * [SoundCloud](https://soundcloud.com/kiwifruitdev)
+    * [Spotify](https://open.spotify.com/user/3ruj53e0pux00jq1zyvrx0a5b)
