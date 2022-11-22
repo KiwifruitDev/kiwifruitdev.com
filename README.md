@@ -1,8 +1,8 @@
-# About me
+# Home
 
-Hi, I'm KiwifruitDev!
+Welcome to [KiwifruitDev.github.io](https://kiwifruitdev.github.io/), I'm KiwifruitDev!
 
-I'm a software developer, and I'm currently working on a few projects, including:
+I'm a hobby software developer, and I've previously worked on a few projects, including:
 
 - [Kiwi's Co-Op Mod for Half-Life: Alyx](https://github.com/KiwifruitDev/KCOM)
 - [Source Filmmaker: Director's Cut](https://github.com/SFMDX)
@@ -58,3 +58,5 @@ If you'd like to support me, you can do so using:
 
 - [Ko-fi](https://ko-fi.com/kiwifruitdev)
 - [GitHub Sponsors](https://github.com/sponsors/KiwifruitDev)
+
+?> Last updated {docsify-updated}

@@ -91,4 +91,4 @@ I may write more details and in-depth instructions soon, especially for the SDR 
 * [SDRAngel](https://www.sdrangel.org/)
 * [Airspy Mini](https://airspy.com/airspy-mini/)
 
-?> Article created 11/21/2022
+?> Last updated {docsify-updated}
