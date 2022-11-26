@@ -12,7 +12,7 @@ I'm a hobby software developer, and I've previously worked on a few projects, in
 
 View contact links at the top of this page or on [Linktree](linktr.ee/kiwifruitdev).
 
-I'm most active on Discord, so feel free to send me a message there.
+I'm most active on [Discord](https://discord.com/users/728082336536854559), so feel free to send me a message there.
 
 ## My projects
 

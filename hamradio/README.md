@@ -2,4 +2,5 @@
 
 This subdirectory contains information about my ham radio activities.
 
-* [Fast-Scan Television (FSTV)](hamradio/fstv.md)
+* [The Fast-Scan TV Chronicles](hamradio/fstv/)
+* [Guides & Tutorials](hamradio/guides/)
