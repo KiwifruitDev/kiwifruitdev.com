@@ -8,8 +8,9 @@ I started writing this subdirectory on 11/21/2022 and pages are still being writ
 
 Each development will be added to a new page below:
 
-* [11/21/2022](/hamradio/fstv/11-21-2022.md)
-* [11/24/2022](/hamradio/fstv/11-24-2022.md)
-* [11/25/2022](/hamradio/fstv/11-25-2022.md)
+* [11/21/2022 - The beginning](/hamradio/fstv/11-21-2022.md)
+* [11/24/2022 - The contiunation](/hamradio/fstv/11-24-2022.md)
+* [11/25/2022 - The waiting](/hamradio/fstv/11-25-2022.md)
+* [11/26/2022 - The prophecy](/hamradio/fstv/11-26-2022.md)
 
 ?> Last updated {docsify-updated}
