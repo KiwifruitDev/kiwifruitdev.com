@@ -1,9 +1,7 @@
 # Home
 Welcome to my website! I'm KiwifruitDev, a hobby software developer based in Las Vegas, Nevada.
 
-I'm a silly programming wizard!
-
-<a href="https://kiwifruitdev.com/" title="Kiwano Maxwell"><img width="96px" src="img/kiwi3_circle.png" alt="Kiwano Maxwell"/></a>
+I'm a silly programming wizard! <a href="https://kiwifruitdev.com/" title="Kiwano Maxwell"><img width="24px" src="img/kiwi3_circle.png" alt="Kiwano Maxwell"/></a>
 
 ## About Me
 Being surrounded by computers since I was 7 years old, I've been obsessed with technology since I was a kid. Although it led to me accidentally destroying the family PC through a computer virus in 2011, I've learned a lot about computers and software development since then.
