@@ -10,10 +10,10 @@ For audio, your SDR would require a bandwidth of about 5-6 mHz.
 
 Required devices and software are as follows:
 
-- Rx SDR device such as an [RTL-SDR](https://www.rtl-sdr.com/), [Airspy (Mini+)](https://airspy.com/), [HackRF](https://greatscottgadgets.com/hackrf/), etc.
+- Rx SDR device such as an [RTL-SDR](https://www.rtl-sdr.com), [Airspy (Mini+)](https://airspy.com), [HackRF](https://greatscottgadgets.com/hackrf), etc.
 - Antenna connected to the SDR device
-- A [local ATV repeater](https://www.atn-tv.com/repeaters/) (or any NTSC/PAL TV transmission)
-- [SDRAngel](https://www.sdrangel.org/)
+- A [local ATV repeater](https://www.atn-tv.com/repeaters) (or any NTSC/PAL TV transmission)
+- [SDRAngel](https://www.sdrangel.org
 - Any necessary drivers for your SDR device
 - A (fast) computer capable of running SDRAngel and your SDR device
 
@@ -23,7 +23,7 @@ First, you'll need to connect your antenna to your SDR device.
 
 This is probably something you've already done, but if you haven't, you can find instructions for your SDR device on the manufacturer's website.
 
-Next, you'll need to download and install [SDRAangel](https://www.sdrangel.org/).
+Next, you'll need to download and install [SDRAngel](https://www.sdrangel.org).
 
 You'll also need to download and install any necessary drivers for your SDR device.
 
@@ -130,11 +130,9 @@ Otherwise, use **Win+P** and turn off your secondary monitor.
 
 ## References
 
-- [SDRAngel](https://www.sdrangel.org/)
-- [RTL-SDR](https://www.rtl-sdr.com/)
-- [Airspy](https://airspy.com/)
-- [HackRF](https://greatscottgadgets.com/hackrf/)
+- [SDRAngel](https://www.sdrangel.org)
+- [RTL-SDR](https://www.rtl-sdr.com)
+- [Airspy](https://airspy.com)
+- [HackRF](https://greatscottgadgets.com/hackrf)
 - [Wikipedia - Pan-American television frequencies](https://en.wikipedia.org/wiki/Pan-American_television_frequencies)
-- [ATN-TV - ATV Repeaters](https://www.atn-tv.com/repeaters/)
-
-?> Last updated {docsify-updated}
+- [ATN-TV - ATV Repeaters](https://www.atn-tv.com/repeaters)
