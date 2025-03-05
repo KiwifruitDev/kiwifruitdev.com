@@ -1,5 +1,3 @@
-* [Bluesky (@kiwifruitdev.com)](https://bsky.app/profile/kiwifruitdev.com)
-* [Steam (/id/KiwifruitDev)](https://steamcommunity.com/id/KiwifruitDev)
-* [Discord (@KiwifruitDev)](https://discord.com/users/728082336536854559)
-* [YouTube (@KiwifruitDev)](https://youtube.com/@KiwifruitDev)
-* [GitHub (KiwifruitDev)](https://github.com/KiwifruitDev)
+* [Bluesky](https://bsky.app/profile/kiwifruitdev.com)
+* [Steam](https://steamcommunity.com/id/KiwifruitDev)
+* [GitHub](https://github.com/KiwifruitDev)
