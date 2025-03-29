@@ -1,9 +1,6 @@
 # Home
-Welcome to my website! I'm KiwifruitDev, a software developer based in Las Vegas, Nevada.
+Welcome to my website! I'm KiwifruitDev, a software developer based in Las Vegas, Nevada. I'm a silly programming wizard!
 
-I'm a silly programming wizard!
-
-## About Me
 My programming journey started in 2013 when I was 9 years old. I learned Roblox Lua, which led me to learn Garry's Mod Lua and eventually game server hosting in 2014. Later in 2015, I learned how to use the Source Engine asset pipeline (materials, maps) for my own Team Fortress 2 servers and other Source games.
 
 Nowadays, I work with .NET alongside the Source Engine and other miscellaneous tools. I'm obsessed with [Source Filmmaker](https://store.steampowered.com/app/1840/Source_Filmmaker/) development in particular. Usually I work on niche projects from being involved in niche communities.
@@ -35,7 +32,7 @@ I'm the project lead for Director's Cut, which started development in May 2022. 
 - [YouTube channel](https://youtube.com/@DirectorsCutMod)
 - [Reddit community](https://www.reddit.com/r/DirectorsCut)
 
-### <a href="https://github.com/DirectorsCutMod/DirectorsCut" title="Kiwi's Co-Op Mod for Half-Life: Alyx"><img height="64px" src="img/projects/kcom.png" alt="KCOM logo"/></a>
+### <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2739356543" title="Kiwi's Co-Op Mod for Half-Life: Alyx"><img height="75px" src="img/projects/kcom.png" alt="KCOM logo"/></a>
 **Kiwi's Co-Op Mod for Half-Life: Alyx** (KCOM) added a co-op mode for [Half-Life: Alyx](https://store.steampowered.com/app/546560/HalfLife_Alyx/). It worked by reverse-engineering the VConsole2 protocol, which is used for the game's console commands. By using VScript code to print out messages to the console, a .NET application can read these messages and send commands to the game. This led to the ability to network player positions and other game data.
 
 This project was released in 2022, and I no longer maintain it.
