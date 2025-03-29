@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<!-- "Home" -->
+<url>
+  <loc>https://kiwifruitdev.com/</loc>
+  <lastmod>2025-03-13T05:35:30+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<!-- "Ham Radio" -->
+<url>
+  <loc>https://kiwifruitdev.com/#/hamradio/</loc>
+  <lastmod>2025-03-13T05:35:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- "Ham Radio" -> "The Fast-Scan TV Chronicles" -->
+<url>
+  <loc>https://kiwifruitdev.com/#/hamradio/fstv/</loc>
+  <lastmod>2025-03-13T05:35:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- "Ham Radio" -> "The Fast-Scan TV Chronicles" -> "11/21/2022 - The beginning" -->
+<url>
+  <loc>https://kiwifruitdev.com/#/hamradio/fstv/11-21-2022</loc>
+  <lastmod>2025-03-13T05:35:30+00:00</lastmod>
+  <priority>0.75</priority>
+</url>
+
+<!-- "Ham Radio" -> "The Fast-Scan TV Chronicles" -> "11/24/2022 - The continuation" -->
+<url>
+  <loc>https://kiwifruitdev.com/#/hamradio/fstv/11-24-2022</loc>
+  <lastmod>2025-03-13T05:35:30+00:00</lastmod>
+  <priority>0.75</priority>
+</url>
+
+<!-- "Ham Radio" -> "The Fast-Scan TV Chronicles" -> "11/25/2022 - The waiting" -->
+<url>
+  <loc>https://kiwifruitdev.com/#/hamradio/fstv/11-25-2022</loc>
+  <lastmod>2025-03-13T05:35:30+00:00</lastmod>
+  <priority>0.75</priority>
+</url>
+
+<!-- "Ham Radio" -> "The Fast-Scan TV Chronicles" -> "11/26/2022 - The prophecy" -->
+<url>
+  <loc>https://kiwifruitdev.com/#/hamradio/fstv/11-26-2022</loc>
+  <lastmod>2025-03-13T05:35:30+00:00</lastmod>
+  <priority>0.75</priority>
+</url>
+
+<!-- "Ham Radio" -> "Guides & Tutorials" -->
+<url>
+  <loc>https://kiwifruitdev.com/#/hamradio/guides/</loc>
+  <lastmod>2025-03-13T05:35:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- "Ham Radio" -> "Guides & Tutorials" -> "How to receive Fast-Scan TV with an SDR" -->
+<url>
+  <loc>https://kiwifruitdev.com/#/hamradio/guides/fstv-sdr</loc>
+  <lastmod>2025-03-13T05:35:30+00:00</lastmod>
+  <priority>0.85</priority>
+</url>
+
+<!-- "Servers" -->
+<url>
+  <loc>https://kiwifruitdev.com/#/servers/</loc>
+  <lastmod>2025-03-13T05:35:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- "Servers" -> "Kiwi's Jazztronauts" -->
+<url>
+  <loc>https://kiwifruitdev.com/#/servers/jazztronauts</loc>
+  <lastmod>2025-03-13T05:35:30+00:00</lastmod>
+  <priority>0.85</priority>
+</url>
+
+</urlset>

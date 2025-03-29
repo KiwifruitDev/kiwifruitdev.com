@@ -7,4 +7,6 @@
     * [11/26/2022 - The prophecy](/hamradio/fstv/11-26-2022.md)
   * [Guides & Tutorials](/hamradio/guides/)
     * [How to receive Fast-Scan TV with an SDR](hamradio/guides/fstv-sdr.md)
+* [Servers](/servers/)
+  * [Kiwi's Jazztronauts](/servers/jazztronauts.md)
   
