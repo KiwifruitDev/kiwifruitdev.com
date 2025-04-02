@@ -1,6 +1,6 @@
 # Server Rules
 <!---
-<img src="../assets/articles/image1.png" alt="Lambda Core" width="50%">
+<img src="assets/articles/image1.png" alt="Lambda Core" width="50%">
 -->
 
 These rules apply to *Wildfire Black Mesa RP*.
@@ -26,37 +26,37 @@ These rules apply to *Wildfire Black Mesa RP*.
 ## **First off!**
 Absolutely no transphobic, homophobic, enby-denying, neurodivergent judgement thrown in this server. If you fall into any of these groups, It doesn’t mean you can throw them around as well. We all need full respect for each other and ourselves, even if you don’t agree with some ideas or statements. If you cannot respect someone’s identity or orientation and you have an issue with it and you will cause problems, please leave the server. If you are actively targeting somebody on the server because of this, then we will have to administer punishment accordingly.
 
-<img src="../assets/articles/divider.png" alt="Divider" width="50%">
+<img src="assets/articles/divider.png" alt="Divider" width="50%">
 
 ## **Second off!**
 Roleplay. Despite this server being semi-serious, we are a little more lenient to the happiness and requests of a majority of players and between us as staff as well. With that, keeping consistent BMRP and character themes straight on is what we’re looking for. Roleplay is something that will be public, and can even happen between admins with an average player. Please, during roleplay, whenever an admin is involved, do not treat them as kings and or queens of the world. Be fair to players when they are to roleplay as well, and always have permission by either a staff, or that player themselves to do something. For example,. let’s say a player is being hunted down. If that player gives the hunter permission to kill, then they are allowed to kill that player as long as there is enough comfort by permission from the player. RDM is not something that is tolerated here, and If you rapidly continue, you will be banned. No questions asked. 
 
-<img src="../assets/articles/divider.png" alt="Divider" width="50%">
+<img src="assets/articles/divider.png" alt="Divider" width="50%">
 
 ## **Third!**
 As stated in the first rule, this goes along with it. Slurs. If you are caught with evidence using a slur of any culture to try and cause issues, be funny, the usual, this is an immediate ban. There are no ban appeals for something that has been created in the use of harm to specific races and people. We do NOT tolerate it. 
 
-<img src="../assets/articles/divider.png" alt="Divider" width="50%">
+<img src="assets/articles/divider.png" alt="Divider" width="50%">
 
 ## **Fourth!**
 Sensory overloads. Sensory overload is when a person’s hearing, touch, or even taste is more sensitive than somebody's common ability. This means that mic spamming is extremely harmful to folks that have these issues, and you will be punished without warning if caught mic spamming enough, due to the harm it genuinely causes. We must protect our players.
 
-<img src="../assets/articles/divider.png" alt="Divider" width="50%">
+<img src="assets/articles/divider.png" alt="Divider" width="50%">
 
 ## **Fifth!**
 Annnnnd a very, very common rule but absolutely no politics. Political chats can cause a massive controversy to something of heat that can be quite hard to calm down with large influential groups of folks. Your opinion and belief is something that you can express and cherish outside of a roleplay server, but we just can't have that going around since it can also invite the worst of folks into the worst of behaviour and mannerisms. We as staff respect you! Just, not something that needs to be considered in Black Mesa.
 
-<img src="../assets/articles/divider.png" alt="Divider" width="50%">
+<img src="assets/articles/divider.png" alt="Divider" width="50%">
 
 ## **Sixth!**
 This BMRP server is very diverse within its community and we allow all forms of culture to be invited here. But cultures that may have harmful views on another must be kept outside of BMRP.  Some of us as staff cannot relate to these issues or understand even the smaller things that may make a culture that culture. But, if something is actively being brought down due to belief, that is again, something that must not be shared or even indicated on the server. We will discipline.
 
-<img src="../assets/articles/divider.png" alt="Divider" width="50%">
+<img src="assets/articles/divider.png" alt="Divider" width="50%">
 
 ## **And seventh!**
 We as admins will always be able to help and respond to any situation even if it's minor at times. But please do not look at us as if we are robots, abusing the staff request in-game and via discord to something so minimal does not lower us as people if we refuse to deal with something that is not at all a problem. We are not lowered as people, if you complain about a player who is just following the rules. We do not become minimal to a group of folks, over something so enticed. If you have any staff complaints, please do report them to Bobby or the admin that currently may supervise another temporarily. If you are to complain about staff, please be respectful and front forward so we can attend to your issue on how we can fix it. Disrespecting staff while at the same time making a complaint with no details does not at all help you or our staff team. 
 
-<img src="../assets/articles/divider.png" alt="Divider" width="50%">
+<img src="assets/articles/divider.png" alt="Divider" width="50%">
 
 # **Community-wide in-game rules & information:**
 1. Do not attempt to RDM. *(RDM aka Random Deathmatch is killing another player without any plausible RP reason)*
@@ -79,7 +79,7 @@ We as admins will always be able to help and respond to any situation even if it
 
 **Below are our category/job specific rules, be sure to read up on those as well.**
 
-<img src="../assets/articles/divider.png" alt="Divider" width="50%">
+<img src="assets/articles/divider.png" alt="Divider" width="50%">
 
 # **BMRP Category/Job specific rules:**
 **Surface Jobs:**
@@ -116,7 +116,7 @@ We as admins will always be able to help and respond to any situation even if it
 4. Vortigaunts and other Xenian creatures may be captured and placed in a lab/containment unit to be experimented on at anytime. *(A Xenian can fight back or roleplay with it.)*
 5. Any abuse of your pill will result in a warn and then an immediate job ban. *(This means using "v" to reset your HP when in your pill.)*
 
-<img src="../assets/articles/divider.png" alt="Divider" width="50%">
+<img src="assets/articles/divider.png" alt="Divider" width="50%">
 
 **THESE RULES ARE SUBJECTED TO CHANGE AT ANYTIME. THANKS FOR PLAYING WILDFIRE BLACK MESA ROLEPLAY.**
 
