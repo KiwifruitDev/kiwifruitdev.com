@@ -1,0 +1,22 @@
+{
+  "name": "nodewebserver",
+  "version": "1.0.0",
+  "description": "Welcome to my website! I'm KiwifruitDev, a software developer based in Las Vegas, Nevada. I'm a silly programming wizard!",
+  "main": "nodewebserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiwifruitDev/kiwifruitDev.com.git"
+  },
+  "author": "KiwifruitDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kiwifruitDev/kiwifruitDev.com/issues"
+  },
+  "homepage": "https://github.com/kiwifruitDev/kiwifruitDev.com#readme",
+  "dependencies": {
+    "http": "^0.0.1-security"
+  }
+}

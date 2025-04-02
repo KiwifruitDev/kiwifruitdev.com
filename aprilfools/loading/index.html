@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+    <div class="loading-screen">
+        <header class="logo-container">
+            <img src="./images/logo.png" alt="Logo" class="logo">
+        </header>
+
+        <div class="content-container">
+            <section class="board server-info">
+                <header class="title">Server Info</header>
+                <div class="content">
+                    <img id="mappreview" src="./images/noimage.jpg" class="preview" align="left">
+                    <p id="servername" class="server-name"></p>
+                    <p id="mapname" class="map-name"></p>
+                    <p id="playerslots" class="player-slots"></p>
+                </div>
+            </section>
+
+            <section class="board-divider"></section>
+
+            <section class="board server-rules">
+                <header class="title">Info</header>
+                <div class="rightcontent">
+                    <p>You can read our server rules in-game.</p>
+                    <p>Make sure to join our Discord!</p>
+                    <p>Have fun! :)</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="loading-bar">
+            <div id="progressbar" class="progress-bar"></div>
+            <span id="status" class="status">Connecting...</span>
+            <span id="percentage" class="percentage">0%</span>
+        </div>
+    </div>
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:remove -->
+    <!-- <script src="scripts/contentloaded.js"></script> -->
+    <!-- <script src="scripts/demo.js"></script> -->
+    <!-- endbuild -->
+</body>
+</html>

@@ -4,4 +4,7 @@ Disallow: /css
 Disallow: /js
 Disallow: /img
 Disallow: /img/socials
+Disallow: /img/brands
+Disallow: /img/projects
+Disallow: /aprilfools
 Sitemap: https://kiwifruitdev.com/sitemap.xml
