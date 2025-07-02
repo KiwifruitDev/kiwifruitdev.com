@@ -20,9 +20,11 @@ NVG started development in March 2023, and was released on Steam in July 2023.
 
 ### <a href="https://github.com/DirectorsCutMod/DirectorsCut" title="Director's Cut"><img width="256px" src="img/projects/directorscut.png" alt="Director's Cut logo"/></a>
 
-**Director's Cut** is a community-driven filmmaking tool for the Source Engine. Based on the recently-released Team Fortress 2 SDK (Source SDK 2013), this project aims to become an actively-maintained alternative to Source Filmmaker.
+**Director's Cut** was a community-driven filmmaking tool for the Source Engine. Based on the recently-released Team Fortress 2 SDK (Source SDK 2013), this project aimed to become an actively-maintained alternative to Source Filmmaker.
 
-I'm the project lead for Director's Cut, which started development in May 2022. There are 4 other contributors, and we are currently in pre-alpha.
+I was the project lead for Director's Cut, which started development in May 2022. There were 4 other contributors.
+
+This project was discontinued on July 2 2025 due to development issues.
 
 **Links**
 - [GitHub repository](https://github.com/DirectorsCutMod/DirectorsCut)
