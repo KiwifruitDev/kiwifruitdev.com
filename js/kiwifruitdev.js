@@ -25,12 +25,12 @@ const mysteryPrefix = "https://www.youtube.com/results?search_query=";
 let isDisabled = false;
 
 const gifMapper = {
-    "firefox4.png": "https://88x31.nl/gifs/firefox4.gif",
-    "firefox4.gif": "img/88x31/firefox4.png",
-    "mysterysite.png": "https://88x31.nl/gifs/mysterysite.gif",
-    "mysterysite.gif": "img/88x31/mysterysite.png",
-    "steam.png": "https://tripixel.gay/steam%20button.gif",
-    "steam%20button.gif": "img/88x31/steam.png",
+    "firefox.png": "/img/88x31/firefox.gif",
+    "firefox.gif": "/img/88x31/firefox.png",
+    "mysterysite.png": "/img/88x31/mysterysite.gif",
+    "mysterysite.gif": "/img/88x31/mysterysite.png",
+    "steam.png": "/img/88x31/steam.gif",
+    "steam.gif": "/img/88x31/steam.png",
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Motion is disabled');
         isDisabled = true;
         const image = document.getElementById('motion-disabler-image');
-        image.src = 'img/switchon.png';
+        image.src = '/img/switchon.png';
         const background = document.getElementById('background');
         background.className = 'background';
         for (const link of disableMotionLinks) {
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function(event) {
             isDisabled = !isDisabled;
             const image = document.getElementById('motion-disabler-image');
-            image.src = isDisabled ? 'img/switchon.png' : 'img/switchoff.png';
+            image.src = isDisabled ? '/img/switchon.png' : '/img/switchoff.png';
             const background = document.getElementById('background');
             background.className = isDisabled ? 'background' : 'background motion-enabled';
             // set # to #disable-motion

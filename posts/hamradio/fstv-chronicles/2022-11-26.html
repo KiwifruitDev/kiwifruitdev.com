@@ -41,32 +41,77 @@
       </a>
       <nav class="navigation">
         <ul>
-          <li><a id="subpage" class="page active" href="/#">Home</a></li>
+          <li><a id="subpage" class="page inactive" href="/#">Home</a></li>
           <li><a id="subpage" class="page inactive" href="/projects#">Projects</a></li>
-          <li><a id="subpage" class="page inactive" href="/posts#">Posts</a></li>
+          <li><a id="subpage" class="page active" href="/posts#">Posts</a></li>
         </ul>
       </nav>
     </header>
     <!-- Main -->
     <div class="main-background">
-      <h1 class="page-title">Home</h1>
+      <h1 class="page-title">The Fast-Scan TV Chronicles: The prophecy (2022-11-26)</h1>
       <div class="main-container">
         <div class="main">
-          <p>Welcome to my website! I'm KiwifruitDev, a software developer based in Las Vegas, Nevada.</p>
-          <p>I'm a silly programming wizard!</p>
-          <p>My programming journey started in 2013 when I was 9 years old. I learned Roblox Lua, which led me to learn Garry's Mod Lua and eventually game server hosting in 2014.</p>
-          <p>Later in 2015, I learned how to use the Source Engine asset pipeline (materials, maps) for my own Team Fortress 2 servers and other Source games.</p>
-          <p>Nowadays, I work with .NET alongside the Source Engine and other miscellaneous tools. I'm obsessed with Source Filmmaker development in particular. Usually I work on niche projects from being involved in niche communities.</p>
-          <!--
-          <p class="center">Check out this animation I made for <a href="https://store.steampowered.com/app/2516360/Nonsensical_Video_Generator/">Nonsensical Video Generator</a>:</p>
-          <div class="embed-player">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/oIXym2xGyMs?si=jL7svHMoeuNiEukg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          -->
+          <h2>The downconverters (again)</h2>
+          <p>After experimenting and a <em>lot</em> of thought processing, my dad finally decided to take a crack at modifying the downconverters.</p>
+          <p>We determined that the green-labelled pot from the board was the local ocillator (LO) adjustment.</p>
+          <p>Problem is, we didn't have a signal generator.</p>
+          <h2>The signal generator</h2>
+          <p>I figured out how to conjure up a 1253.25 MHz signal generator using a Raspberry Pi 3 (B+) running <a href="https://github.com/F5OEO/rpitx" target="_blank" rel="noopener">rpitx</a>. </p>
+          <p>I hooked up two leads from the Pi, one from GPIO 4 to the antenna and the other from a related GPIO pin to ground (I forget which one).</p>
+          <p>Using SSH, I ran the following command to install rpitx:</p>
+          <code>
+            git clone https://github.com/F5OEO/rpitx
+            <br>
+            cd rpitx
+            <br>
+            ./install.sh
+            <br>
+            sudo reboot
+            <br>
+            ...
+            <br>
+            cd rpitx
+            <br>
+            ./easytest.sh
+          </code>
+          <p>From there, I set the output frequency to <code>1253.25</code> MHz and selected the <code>Tune</code> option which outputs a carrier signal.</p>
+          <h2>The frequency counter</h2>
+          <p>Reading more into the TVC-12G, I found out that a math equation is used to adjust the local ocillator (LO) frequency.</p>
+          <p>When we first hooked up the downconverter to a frequency counter (well, actually an ICOM receiver), we found that the LO frequency was 1240 MHz.</p>
+          <p>We then used the math equation to determine the LO frequency:</p>
+          <code>LO = F - 181.25 MHz (Channel 8)</code>
+          <p>The <code>F</code> is the target input frequency, which for us was 1253.25 MHz.</p>
+          <p>Therefore, the LO frequency should be 1072 MHz and not 1240 MHz.</p>
+          <p>Having hooked up one of the downconverters to the signal generator, we adjusted the LO frequency to 1072 MHz and found that the output frequency was around 181.25 MHz.</p>
+          <h2>The suspense</h2>
+          <p>Knowing that the old CRT TV could track channels without it being exactly accurate, we hooked up the downconverter to the TV and tuned to channel 8.</p>
+          <p>We didn't get a picture as nobody was using the repeater, but we did believe it was correct at least.</p>
+          <p>However, when we tuned to channel 50 (not 49 or 51), we got a completely black screen with static audio.</p>
+          <p>The audio carrier is usually 5 MHz off anyways, so it's not a big deal.</p>
+          <p>But picking up something on channel 50 sounds really weird.</p>
+          <h2>The coil</h2>
+          <p>Before messing with the LO, my dad contacted the <a href="https://www.hamtv.com" target="_blank" rel="noopener">Ham TV</a> guy and he mentioned that there is a missing coil on the downconverter. </p>
+          <p>I can't share photos of the manual here, but on the board it was replaced with a straight wire for some reason.</p>
+          <p>
+            <a href="/img/posts/hamradio/fstv-chronicles/PXL_20221127_013031250.jpg" title="Missing coil"><img src="/img/posts/hamradio/fstv-chronicles/PXL_20221127_013031250.jpg" alt="Missing coil"></a>
+          </p>
+          <p>We believe that this missing coil is related to the channel 7/8 output, and that's why we might be getting a picture on channel 50.</p>
+          <p>It'd take some trial and error to figure out if this is the case, but we'll figure it out.</p>
+          <h2>The future</h2>
+          <p>We're expecting the transmitter to arrive between Dec. 3rd and Dec. 5th.</p>
+          <p>Alongside the transmitter, my dad ordered an HDMI to composite video adapter.</p>
+          <p>
+            <a href="/img/posts/hamradio/fstv-chronicles/hdmi-to-composite.jpg" title="HDMI to composite video adapter"><img src="/img/posts/hamradio/fstv-chronicles/hdmi-to-composite.jpg" alt="HDMI to composite video adapter"></a>
+          </p>
+          <p>We're going to try to use <a href="https://obsproject.com" target="_blank" rel="noopener">OBS Studio</a> to project onto the transmitter as if it was another monitor.</p>
+          <p>I'm not sure if it'll work, but we'll see.</p>
+          <p>
+            <a href="/posts/hamradio/fstv-chronicles/2022-11-25">Previous page: 2022-11-25</a>
+          </p>
         </div>
       </div>
     </div>
-    <!-- Footer -->
     <footer>
       <hr class="footer-divider">
       <p>KiwifruitDev logo by <a href="https://flare145.com/" target="_blank" rel="noopener">FLARE145</a> • kiwifruitdev.com &copy; 2025 KiwifruitDev</p>
