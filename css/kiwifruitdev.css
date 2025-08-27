@@ -1,0 +1,300 @@
+/* Fonts */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/roboto.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/roboto.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/roboto.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/roboto.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Munro';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/munro.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Munro';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/munro.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Munro';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/munro.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Munro';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/munro.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Munro Small';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/munrosmall.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Munro Small';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/munrosmall.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Munro Small';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/munrosmall.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Munro Small';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/munrosmall.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Animation */
+@keyframes tiledbg {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 56px 56px;
+  }
+}
+
+/* Body */
+body {
+  margin: 0;
+  min-height: calc(100vh);
+  color: white;
+  background-color: #808080;
+  font-family: 'Roboto', sans-serif;
+}
+.background {
+  border-radius: 12px;
+  border: 8px solid #808080;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0;
+  min-height: calc(100vh);
+  background-color: #404040;
+}
+.motion-enabled {
+  background-image: url('../img/nvgtiles.png');
+  background-size: 56px;
+  background-repeat: repeat;
+  background-clip: padding-box, border-box;
+  animation: tiledbg 1s linear infinite;
+}
+a {
+  color: #00BFFF;
+}
+
+/* Header */
+.header {
+  display: contents;
+  max-width: 700px;
+}
+.logo {
+  width: 304px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.navigation {
+  text-align: center;
+  margin: 20px 0;
+}
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.navigation li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.page {
+  font-size: 20px;
+  font-family: 'Munro', sans-serif;
+  text-shadow: 2px 2px 0px black;
+  color: white;
+  text-decoration: none;
+  padding: 0px 6px 0px 8px;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 12px;
+  box-shadow: 2px 2px 0px black
+}
+.inactive {
+  background-color: #404040;
+  border-color: #808080;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.inactive:hover {
+  background-color: #2B363A;
+  border-color: #576C73;
+}
+.active {
+  background-color: #2E3A2B;
+  border-color: #5E7357;
+  transition: color 0.3s;
+}
+.active:hover {
+  color: lightgreen;
+}
+
+/* Main */
+.main-background {
+  border-radius: 16px 16px 10px 10px;
+  max-width: 732px;
+  margin: 0 auto;
+  padding: 0px 4px 3px 4px;
+  background-color: black;
+}
+.page-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: 'Munro Small', sans-serif;
+  padding: 0px 0px 3px 0px;
+  margin: 0;
+  color: white;
+}
+.main-container {
+  padding: 10px 10px 10px 10px;
+  border-radius: 8px;
+  background-color: #808080;
+}
+.main {
+  border-radius: 8px;
+  padding: 1px 19px 3px 19px;
+  background-color: #505050;
+}
+.center {
+  text-align: center;
+}
+.embed-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  max-width: 740px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;  
+  font-family: 'Munro', sans-serif;
+  text-shadow: 2px 2px 0px black;
+  color: white;
+  text-decoration: none;
+}
+footer p {
+  margin: 8px;
+}
+.footer-divider {
+  color: white;
+  border-top: 1px solid white;
+  box-shadow: 2px 2px 0px black;
+  margin: 0;
+}
+.badges {
+  margin: 8px;
+  /* properly wrap for mobile */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.badges a {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: 'Munro Small', sans-serif;
+  color: white;
+  width: 88px;
+  height: 31px;
+  display: inline-block;
+}
+.badges img {
+  width: 88px;
+  height: 31px;
+  box-shadow: 2px 2px 0px black
+}
+.switch {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+}
+.switch-image {
+  width: 52px;
+  height: 32px;
+}
+.switch-text {
+  text-decoration: none;
+  color: white;
+  padding: 0px 10px 0px 6px;
+}

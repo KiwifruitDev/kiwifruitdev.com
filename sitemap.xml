@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://kiwifruitdev.com/</loc>
+  <lastmod>2025-08-07T11:11:33+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kiwifruitdev.com/projects</loc>
+  <lastmod>2025-08-07T11:11:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiwifruitdev.com/posts/</loc>
+  <lastmod>2025-08-07T11:11:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiwifruitdev.com/posts/hamradio/</loc>
+  <lastmod>2025-08-07T11:11:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kiwifruitdev.com/posts/servers/</loc>
+  <lastmod>2025-08-07T11:11:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kiwifruitdev.com/posts/servers/jazztronauts</loc>
+  <lastmod>2025-08-07T11:11:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kiwifruitdev.com/posts/hamradio/fstv-chronicles/</loc>
+  <lastmod>2025-08-07T11:11:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://kiwifruitdev.com/posts/hamradio/how-to-fstv-sdr</loc>
+  <lastmod>2025-08-07T11:11:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://kiwifruitdev.com/posts/hamradio/fstv-chronicles/2022-11-21</loc>
+  <lastmod>2025-08-07T11:11:34+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://kiwifruitdev.com/posts/hamradio/fstv-chronicles/2022-11-24</loc>
+  <lastmod>2025-08-07T11:11:33+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://kiwifruitdev.com/posts/hamradio/fstv-chronicles/2022-11-25</loc>
+  <lastmod>2025-08-07T11:11:34+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://kiwifruitdev.com/posts/hamradio/fstv-chronicles/2022-11-26</loc>
+  <lastmod>2025-08-07T11:11:33+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+</urlset>

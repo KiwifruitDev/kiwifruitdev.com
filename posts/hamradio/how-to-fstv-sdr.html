@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KiwifruitDev - How to receive Fast-Scan TV with an SDR</title>
+  <link rel="stylesheet" href="/css/kiwifruitdev.css" />
+
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <meta name="title" content="KiwifruitDev - How to receive Fast-Scan TV with an SDR">
+  <meta name="description" content="This guide will show you how to receive Fast-Scan TV (FSTV) with an SDR.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kiwifruitdev.com">
+  <meta property="og:title" content="KiwifruitDev - How to receive Fast-Scan TV with an SDR">
+  <meta property="og:description" content="This guide will show you how to receive Fast-Scan TV (FSTV) with an SDR.">
+  <meta property="og:image" content="https://kiwifruitdev.com/img/social2.png">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://kiwifruitdev.com">
+  <meta property="twitter:title" content="KiwifruitDev - How to receive Fast-Scan TV with an SDR">
+  <meta property="twitter:description" content="This guide will show you how to receive Fast-Scan TV (FSTV) with an SDR.">
+  <meta property="twitter:image" content="https://kiwifruitdev.com/img/social2.png">
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+</head>
+<body>
+  <div id="background" class="background motion-enabled">
+    <!-- Header -->
+    <header class="header">
+      <a class="logo" id="subpage" href="https://kiwifruitdev.com/#" title="KiwifruitDev">
+        <img class="logo" src="/img/kiwifruitdevlogo.png" alt="KiwifruitDev logo">
+      </a>
+      <nav class="navigation">
+        <ul>
+          <li><a id="subpage" class="page inactive" href="/#">Home</a></li>
+          <li><a id="subpage" class="page inactive" href="/projects#">Projects</a></li>
+          <li><a id="subpage" class="page active" href="/posts#">Posts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main -->
+    <div class="main-background">
+      <h1 class="page-title">How to receive Fast-Scan TV with an SDR (2022-11-25)</h1>
+      <div class="main-container">
+        <div class="main">
+          <p>This guide will show you how to receive Fast-Scan TV (FSTV) with an SDR.</p>
+          <p>Compatible SDR devices must have a bandwidth of at least 400 kHz. (The more bandwidth, the better - 400 kHz will get you a cruddy picture, but it will work.)</p>
+          <p>For audio, your SDR would require a bandwidth of about 5-6 mHz.</p>
+          <h2>Requirements</h2>
+          <p>Required devices and software are as follows:</p>
+          <ul>
+            <li>Rx SDR device such as an <a href="https://www.rtl-sdr.com" target="_blank" rel="noopener">RTL-SDR</a>, <a href="https://airspy.com" target="_blank" rel="noopener">Airspy (Mini+)</a>, <a href="https://greatscottgadgets.com/hackrf" target="_blank" rel="noopener">HackRF</a>, etc.</li>
+            <li>Antenna connected to the SDR device</li>
+            <li>A <a href="https://www.atn-tv.com/repeaters" target="_blank" rel="noopener">local ATV repeater</a> (or any NTSC/PAL TV transmission)</li>
+            <li><a href="https://www.sdrangel.org" target="_blank" rel="noopener">SDRAngel</a></li>
+            <li>Any necessary drivers for your SDR device</li>
+            <li>A (fast) computer capable of running SDRAngel and your SDR device</li>
+          </ul>
+          <h2>Setup</h2>
+          <p>First, you'll need to connect your antenna to your SDR device.</p>
+          <p>This is probably something you've already done, but if you haven't, you can find instructions for your SDR device on the manufacturer's website.</p>
+          <p>Next, you'll need to download and install <a href="https://www.sdrangel.org" target="_blank" rel="noopener">SDRAngel</a>. </p>
+          <p>You'll also need to download and install any necessary drivers for your SDR device.</p>
+          <p>Once you've done that, you can launch SDRAngel.</p>
+          <h2>Configuration</h2>
+          <h3>Add SDR device</h3>
+          <p>For SDRangel to work with your SDR device, you'll need to configure it.</p>
+          <p>To do this, click on the <strong>Add Rx Device</strong> button in the top left corner of the window.</p>
+          <p>
+            <a href="/img/posts/hamradio/how-to-fstv-sdr/rx-device.png" title="Add Rx Device"><img src="/img/posts/hamradio/how-to-fstv-sdr/rx-device.png" alt="Add Rx Device"/></a>
+          </p>
+          <p>This will open a window that will allow you to choose an SDR device.</p>
+          <p>Select your SDR device from the list and click <strong>OK</strong>.</p>
+          <h3>Add channels</h3>
+          <p>Next, you'll need to add channels to your device.</p>
+          <p>In the top left corner of the <em>R:0</em> window, click on the <strong>Add channels</strong> button. </p>
+          <p>
+            <a href="/img/posts/hamradio/how-to-fstv-sdr/add-channels.png" title="Add channels"><img src="/img/posts/hamradio/how-to-fstv-sdr/add-channels.png" data-origin="/img/add-channels.png" alt="Add channels" class="medium-zoom-image"></a>
+          </p>
+          <p>This will allow you to add the <strong>ATV Demodulator</strong> channel in a new window. </p>
+          <p>
+            <a href="/img/posts/hamradio/how-to-fstv-sdr/atv-demodulator.png" title="ATV Demodulator"><img src="/img/posts/hamradio/how-to-fstv-sdr/atv-demodulator.png" data-origin="/img/atv-demodulator.png" alt="ATV Demodulator" class="medium-zoom-image"></a>
+          </p>
+          <h4>FM Demodulator</h4>
+          <p>If your SDR device supports at least 5 MHz of bandwidth, you can use the <strong>FM Demodulator</strong> channel to demodulate the audio along with the video.</p>
+          <p>The video signal will become degraded as the bandwidth is reduced to make room for the audio, but it will still be watchable.</p>
+          <p>Add the <strong>FM Demodulator</strong> channel by clicking on the <strong>Add channels</strong> button in the top left corner of the <em>R:0</em> window, as before.</p>
+          <h3>ATV Demodulator</h3>
+          <p>The <strong>ATV Demodulator</strong> channel will demodulate the video signal. </p>
+          <p>Tune to the video carrier frequency and adjust the bandwidth to match the video signal.</p>
+          <p>For my setup, I will use an Airspy Mini with a 6 MHz bandwidth and a frequency of <em>61.25 MHz</em> (channel 3). </p>
+          <p>I will be attempting to capture a video signal from a Super Nintendo, as my local repeater is not currently broadcasting.</p>
+          <p>You can find standard video carrier frequencies for broadcast channels from <a href="https://en.wikipedia.org/wiki/Pan-American_television_frequencies" target="_blank" rel="noopener">Wikipedia</a>.</p>
+          <h4>Audio offsets</h4>
+          <p>If you're also receiving audio as specified above, you must tune offsets as the audio carrier frequency is usually 4 to 5 MHz above the video carrier frequency.</p>
+          <p>For channel 3, the audio carrier frequency is <em>65.75 MHz</em> and is 4.5 MHz above the video carrier frequency.</p>
+          <p>Just tune between the video and audio carrier frequencies until both carriers are visible in the waterfall.</p>
+          <p>In which case, I would tune to <em>63.5 MHz</em> and offset the video carrier by <em>-2.25 MHz</em> and the audio carrier by <em>+2.25 MHz</em>.</p>
+          <h4>Video settings</h4>
+          <p>The <strong>ATV Demodulator</strong> channel has a few settings that you can adjust to improve the quality and format of the video.</p>
+          <p>For example, the default modulation is <strong>FM 1</strong> and can be changed to <strong>AM</strong> (which is used for standard broadcast television).</p>
+          <p>NTSC video can be decoded by setting the settings as follows:</p>
+          <ul>
+            <li>
+              <strong>Modulation type</strong>: AM
+            </li>
+            <li>
+              <strong>Nominal numbers of lines per frame</strong>: 525
+            </li>
+            <li>
+              <strong>Frames per second</strong>: 30
+            </li>
+            <li>
+              <strong>TV standard scheme</strong>: PAL525
+            </li>
+            <li>
+              <strong>HSync</strong>: True
+            </li>
+            <li>
+              <strong>VSync</strong>: True
+            </li>
+          </ul>
+          <p>You may need to toggle the <strong>Inv</strong> checkbox to invert the video signal if needed.</p>
+          <p>The <strong>Synch</strong> slider is used to change the horizontal sync position, you must use trial and error to find the correct value as every set-up is different.</p>
+          <p>The <strong>Black lvl</strong> slider is used to adjust the black level of the video signal, usually the default value is too high and you must lower it to see the video.</p>
+          <p>You can adjust the <strong>Asymmetrical filter opposite band cutoff</strong> and <strong>Asymmetrical filter in band cutoff / Decimator filter cutoff</strong> sliders to fit within the bandwidth of your SDR device.</p>
+          <h2>Getting a signal</h2>
+          <p>Once you've configured your SDR device, you can start receiving signals.</p>
+          <p>Here's what kind of signal I'm getting with my setup:</p>
+          <h2>Troubleshooting</h2>
+          <h3>SDRAngel crashes when adding an Rx device</h3>
+          <p>This happened to me when reproducing this set-up on a different computer.</p>
+          <p>It occurs when you have two or more monitors and SDRAngel does not start on the main monitor.</p>
+          <p>To fix this, you must move SDRAngel to the main monitor, close it, and then re-open it.</p>
+          <p>Otherwise, use <strong>Win+P</strong> and turn off your secondary monitor.</p>
+          <h2>References</h2>
+          <ul>
+            <li>
+              <a href="https://www.sdrangel.org" target="_blank" rel="noopener">SDRAngel</a>
+            </li>
+            <li>
+              <a href="https://www.rtl-sdr.com" target="_blank" rel="noopener">RTL-SDR</a>
+            </li>
+            <li>
+              <a href="https://airspy.com" target="_blank" rel="noopener">Airspy</a>
+            </li>
+            <li>
+              <a href="https://greatscottgadgets.com/hackrf" target="_blank" rel="noopener">HackRF</a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Pan-American_television_frequencies" target="_blank" rel="noopener">Wikipedia - Pan-American television frequencies</a>
+            </li>
+            <li>
+              <a href="https://www.atn-tv.com/repeaters" target="_blank" rel="noopener">ATN-TV - ATV Repeaters</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <hr class="footer-divider">
+      <p>kiwifruitdev.com &copy; 2025 KiwifruitDev</p>
+      <div class="badges">
+        <a href="https://ublockorigin.com/" title="uBlock Origin Now!" target="_blank" rel="noopener"><img src="/img/88x31/ublock-now.png" alt="uBlock Origin Now!"/></a>
+        <a href="https://firefox.com/" title="Tested on Firefox" target="_blank" rel="noopener"><img src="/img/88x31/firefox.gif" alt="Tested on Firefox"/></a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" title="Made with CSS" target="_blank" rel="noopener"><img src="/img/88x31/css.png" alt="Made with CSS"/></a>
+        <a href="/feed.rss" title="RSS feed" target="_blank" rel="noopener"><img src="/img/88x31/rss.png" alt="RSS feed"/></a>
+        <a id="mystery-site" href="#" title="Mystery Site"><img src="/img/88x31/mysterysite.gif" alt="Mystery Site"/></a>
+      </div>
+    </footer>
+  </div>
+  <script src="/js/kiwifruitdev.js"></script>
+</body>
+</html>

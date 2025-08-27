@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>KiwifruitDev</title>
+    <link>https://kiwifruitdev.com/</link>
+    <atom:link href="https://kiwifruitdev.com/feed.rss" rel="self" type="application/rss+xml" />
+    <description>Welcome to my website! I'm KiwifruitDev.</description>
+    <language>en-us</language>
+    <pubDate>Thu, 07 Aug 2025 00:00:00 GMT</pubDate>
+    <item>
+        <title>Home</title>
+        <link>https://kiwifruitdev.com/</link>
+        <description>Welcome to my website! I'm KiwifruitDev, a software developer. My programming journey started in 2013 when I was 9 years old...</description>
+        <guid>https://kiwifruitdev.com/</guid>
+        <pubDate>Mon, 21 Nov 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+        <title>The Fast-Scan TV Chronicles: The Beginning (2022-11-21)</title>
+        <link>https://kiwifruitdev.com/posts/hamradio/fstv-chronicles/2022-11-21</link>
+        <description>Sometime last week, my dad was asked about trying out fast scan TV instead of his usual slow scan TV (the latter of which is ...</description>
+        <guid>https://kiwifruitdev.com/posts/hamradio/fstv-chronicles/2022-11-21</guid>
+        <pubDate>Mon, 21 Nov 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+        <title>The Fast-Scan TV Chronicles: The Continuation (2022-11-24)</title>
+        <link>https://kiwifruitdev.com/posts/hamradio/fstv-chronicles/2022-11-24</link>
+        <description>Two days ago, my dad talked with the ATN-TV guys through their Whereby net/roundtable. They were very helpful and gave him so...</description>
+        <guid>https://kiwifruitdev.com/posts/hamradio/fstv-chronicles/2022-11-24</guid>
+        <pubDate>Thu, 24 Nov 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+        <title>The Fast-Scan TV Chronicles: The Waiting (2022-11-25)</title>
+        <link>https://kiwifruitdev.com/posts/hamradio/fstv-chronicles/2022-11-25</link>
+        <description>My dad bought a handheld TV scanner, the Icom IC-R3. Turns out that it's a damn good scanner (even if it eats up batteries). ...</description>
+        <guid>https://kiwifruitdev.com/posts/hamradio/fstv-chronicles/2022-11-25</guid>
+        <pubDate>Fri, 25 Nov 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+        <title>How to receive Fast-Scan TV with an SDR (2022-11-25)</title>
+        <link>https://kiwifruitdev.com/posts/hamradio/how-to-fstv-sdr</link>
+        <description>This guide will show you how to receive Fast-Scan TV (FSTV) with an SDR. Compatible SDR devices must have a bandwidth of at l...</description>
+        <guid>https://kiwifruitdev.com/posts/hamradio/how-to-fstv-sdr</guid>
+        <pubDate>Fri, 25 Nov 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+        <title>The Fast-Scan TV Chronicles: The Prophecy (2022-11-26)</title>
+        <link>https://kiwifruitdev.com/posts/hamradio/fstv-chronicles/2022-11-26</link>
+        <description>After experimenting and a lot of thought processing, my dad finally decided to take a crack at modifying the downconverters. ...</description>
+        <guid>https://kiwifruitdev.com/posts/hamradio/fstv-chronicles/2022-11-26</guid>
+        <pubDate>Sat, 26 Nov 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+        <title>Projects</title>
+        <link>https://kiwifruitdev.com/projects</link>
+        <description>I've worked on a few projects: Arkham Revived (Self-Hosted) A self-hosted authentication server for the online multiplayer mo...</description>
+        <guid>https://kiwifruitdev.com/projects</guid>
+        <pubDate>Tue, 04 Mar 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+        <title>Kiwi's Jazztronauts</title>
+        <link>https://kiwifruitdev.com/posts/servers/jazztronauts</link>
+        <description>Hi, welcome to my Jazztronauts server! This is just a simple server that I made for anyone to explore this old gamemode. Ther...</description>
+        <guid>https://kiwifruitdev.com/posts/servers/jazztronauts</guid>
+        <pubDate>Wed, 12 Mar 2025 00:00:00 GMT</pubDate>
+    </item>
+</channel>
+</rss>
