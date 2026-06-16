@@ -1,0 +1,106 @@
+---
+import social from '../assets/social2.png';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+const {
+    title,
+    page = 'home',
+    description = "Welcome to my website! I'm KiwifruitDev, a software developer.",
+    nextPage,
+    prevPage
+} = Astro.props;
+const pageTitle = `KiwifruitDev - ${title}`;
+const pageUrl = `https://kiwifruitdev.com${page === 'home' ? '/' : `/${page}`}`;
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>{pageTitle}</title>
+
+		<link rel="sitemap" href="/sitemap-index.xml" />
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			title="KiwifruitDev"
+			href={new URL("rss.xml", Astro.site)}
+		/>
+
+		<link rel="icon" type="image/png" href="/favicon.png">
+		<link rel="apple-touch-icon" href="/favicon.png">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+		<meta name="title" content={pageTitle}>
+		<meta name="description" content={description}>
+
+		<meta property="og:type" content="website">
+		<meta property="og:url" content={pageUrl}>
+		<meta property="og:title" content={pageTitle}>
+		<meta property="og:description" content={description}>
+		<meta property="og:image" content={social.src}>
+
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content={pageUrl}>
+		<meta property="twitter:title" content={pageTitle}>
+		<meta property="twitter:description" content={description}>
+		<meta property="twitter:image" content={social.src}>
+
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+	</head>
+	<body>
+    <div id="background" class="background motion-enabled">
+		<Header currentPage={page} />
+      <!-- Main -->
+      	<div class="main-background">
+				{prevPage ? (
+				<a id="back-btn" class="back-button" href={prevPage} aria-label="Back" data-override="true">←</a>
+				) : (
+				<a id="back-btn" class="back-button" href="#" aria-label="Back" style="display:none">←</a>
+				)}
+				<h1 class="page-title">{title}</h1>
+				{nextPage ? (
+				  <a id="next-btn" class="next-button" href={nextPage} aria-label="Next">→</a>
+				) : null}
+				<div class="main-container">
+					<div class="main">
+						<slot />
+					</div>
+				</div>
+			</div>
+			<script type="module">
+				const backBtn = document.getElementById('back-btn');
+				if (backBtn && backBtn.getAttribute('data-override') !== 'true') {
+					const path = location.pathname || '/';
+					if (path !== '/') {
+					const trimmed = path.replace(/\/$/, '');
+					const parts = trimmed.split('/').filter(Boolean);
+					if (parts.length > 0) {
+						let target = '/';
+						if (parts.length === 1) {
+						// single-segment like /posts/ -> go home
+						target = '/';
+						} else {
+						// multi-segment: go one level up (e.g. /page/file -> /page/)
+						const parentParts = parts.slice(0, -1);
+						target = '/' + parentParts.join('/') + '/';
+						}
+						backBtn.href = target;
+						backBtn.style.display = '';
+					}
+					}
+				}
+			</script>
+      <Footer />
+    </div>
+
+    <script type="module" src="/js/mystery-site.js"></script>
+  </body>
+</html>

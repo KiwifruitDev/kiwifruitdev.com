@@ -1,0 +1,29 @@
+---
+const { currentPage = 'home' } = Astro.props;
+const navItems = [
+  { label: 'Home', href: '/', page: 'home' },
+  { label: 'Projects', href: '/projects', page: 'projects' },
+  { label: 'Posts', href: '/posts/', page: 'posts' },
+  { label: 'Socials', href: '/socials', page: 'socials' },
+];
+---
+<header class="header">
+  <a class="logo" href="/" title="KiwifruitDev">
+    <img class="logo" src="/img/kiwifruitdevlogo.png" alt="KiwifruitDev logo" />
+  </a>
+  <nav class="navigation">
+    <ul>
+      {navItems.map((item) => (
+        <li>
+          <a
+            class={`page ${item.page === currentPage ? 'active' : 'inactive'}`}
+            href={item.href}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+  
+</header>
