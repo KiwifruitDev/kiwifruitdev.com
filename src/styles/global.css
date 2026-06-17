@@ -133,9 +133,9 @@ body {
   box-sizing: border-box;
   margin: 0;
   min-height: calc(100vh);
-  background-color: #404040;
 }
 .motion-enabled {
+  background-color: #404040;
   background-image: url('/img/nvgtiles.png');
   background-size: 56px;
   background-repeat: repeat;
@@ -331,4 +331,68 @@ footer p {
   text-decoration: none;
   color: white;
   padding: 0px 10px 0px 6px;
+}
+
+/* Container holds the positioning context */
+.video-background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevents scrollbars from video scaling */
+}
+
+/* Video scales to completely cover the area */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Acts like background-size: cover */
+  z-index: -1; /* Pushes the video safely behind content */
+}
+
+video#bg-video {
+  background: url(/img/arkhamrevived-firstframe.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Utility: center inline/embedded videos (e.g. .webm files) */
+.video-center,
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make the video responsive and centered when used directly */
+video.centered,
+video.video-center {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Full-viewport centering variant (keeps aspect ratio) */
+.video-viewport-center {
+  position: fixed; /* remove from flow so it doesn't push content down */
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  top: 8px;
+  left: 8px;
+  align-items: center;
+  width: calc(100% - 16px);
+  height: calc(100vh - 16px);
+  z-index: -20; /* behind page content */
+  pointer-events: none; /* let clicks pass through */
 }

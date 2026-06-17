@@ -1,10 +1,10 @@
 ---
-import social from '../assets/social2.png';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
 const {
+	container = "/",
     title,
     page = 'home',
     description = "Welcome to my website! I'm KiwifruitDev, a software developer.",
@@ -13,6 +13,7 @@ const {
 } = Astro.props;
 const pageTitle = `KiwifruitDev - ${title}`;
 const pageUrl = `https://kiwifruitdev.com${page === 'home' ? '/' : `/${page}`}`;
+let background = (container == "/" ? "background motion-enabled" : "background");
 ---
 <!doctype html>
 <html lang="en">
@@ -27,10 +28,10 @@ const pageUrl = `https://kiwifruitdev.com${page === 'home' ? '/' : `/${page}`}`;
 			href={new URL("rss.xml", Astro.site)}
 		/>
 
-		<link rel="icon" type="image/png" href="/favicon.png">
-		<link rel="apple-touch-icon" href="/favicon.png">
-		<link rel="shortcut icon" href="/favicon.ico">
-		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" type="image/png" href={`${container}favicon.png`}>
+		<link rel="apple-touch-icon" href={`${container}favicon.png`}>
+		<link rel="shortcut icon" href={`${container}favicon.ico`}>
+		<link rel="icon" type="image/x-icon" href={`${container}favicon.ico`}>
 
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -43,23 +44,30 @@ const pageUrl = `https://kiwifruitdev.com${page === 'home' ? '/' : `/${page}`}`;
 		<meta property="og:url" content={pageUrl}>
 		<meta property="og:title" content={pageTitle}>
 		<meta property="og:description" content={description}>
-		<meta property="og:image" content={social.src}>
+		<meta property="og:image" content={`${container}social2.png`}>
 
 		<meta property="twitter:card" content="summary_large_image">
 		<meta property="twitter:url" content={pageUrl}>
 		<meta property="twitter:title" content={pageTitle}>
 		<meta property="twitter:description" content={description}>
-		<meta property="twitter:image" content={social.src}>
+		<meta property="twitter:image" content={`${container}social2.png`}>
 
 		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta http-equiv="Expires" content="0" />
 	</head>
 	<body>
-    <div id="background" class="background motion-enabled">
-		<Header currentPage={page} />
-      <!-- Main -->
-      	<div class="main-background">
+   		<div id="background" class={background}>
+			{container == "/arkhamrevived/" ? (
+				<div class="video-viewport-center">
+					<video autoplay loop muted playsinline poster="/img/arkhamrevived-firstframe.png" id="bg-video" class="bg-video centered">
+						<source src="/img/arkhamrevived.webm" type="video/webm" />
+					</video>
+				</div>
+			) : null}
+			<Header currentPage={page} container={container} />
+			<!-- Main -->
+			<div class="main-background">
 				{prevPage ? (
 				<a id="back-btn" class="back-button" href={prevPage} aria-label="Back" data-override="true">←</a>
 				) : (
@@ -67,7 +75,7 @@ const pageUrl = `https://kiwifruitdev.com${page === 'home' ? '/' : `/${page}`}`;
 				)}
 				<h1 class="page-title">{title}</h1>
 				{nextPage ? (
-				  <a id="next-btn" class="next-button" href={nextPage} aria-label="Next">→</a>
+					<a id="next-btn" class="next-button" href={nextPage} aria-label="Next">→</a>
 				) : null}
 				<div class="main-container">
 					<div class="main">
@@ -98,9 +106,9 @@ const pageUrl = `https://kiwifruitdev.com${page === 'home' ? '/' : `/${page}`}`;
 					}
 				}
 			</script>
-      <Footer />
-    </div>
+			<Footer container={container}/>
+		</div>
 
-    <script type="module" src="/js/mystery-site.js"></script>
+		<script type="module" src="/js/mystery-site.js"></script>
   </body>
 </html>

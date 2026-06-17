@@ -4,7 +4,7 @@ page: posts
 title: 'Kiwi''s Jazztronauts'
 description: 'Hi, welcome to my Jazztronauts server! This is just a simple server that I made for anyone to explore this old gamemode.'
 pubDate: Wed, 12 Mar 2025 00:00:00 GMT
-nextPage: /socials
+nextPage: /posts/servers/arkhamrevived
 ---
 Hi, welcome to my Jazztronauts server!
 

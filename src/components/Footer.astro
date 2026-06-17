@@ -1,23 +1,26 @@
 ---
+const { container = "/" } = Astro.props;
 ---
 <footer>
   <hr class="footer-divider" />
   <p>kiwifruitdev.com &copy; 2026 KiwifruitDev</p>
-  <div class="badges">
-    <a href="https://ublockorigin.com/" title="uBlock Origin Now!" target="_blank" rel="noopener">
-        <img src="/img/88x31/ublock-now.png" alt="uBlock Origin Now!" />
-    </a>
-    <a href="https://firefox.com/" title="Tested on Firefox" target="_blank" rel="noopener">
-        <img src="/img/88x31/firefox.gif" alt="Tested on Firefox" />
-    </a>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer" title="Made with CSS" target="_blank" rel="noopener">
-        <img src="/img/88x31/css.png" alt="Made with CSS"/>
-    </a>
-    <a href="/rss.xml" title="RSS feed" target="_blank" rel="noopener">
-        <img src="/img/88x31/rss.png" alt="RSS feed"/>
-    </a>
-    <a id="mystery-site" href="#" title="Mystery Site">
-      <img src="/img/88x31/mysterysite.gif" alt="Mystery Site" />
-    </a>
-  </div>
+  {container == "/" ? (
+    <div class="badges">
+      <a href="https://ublockorigin.com/" title="uBlock Origin Now!" target="_blank" rel="noopener">
+          <img src="/img/88x31/ublock-now.png" alt="uBlock Origin Now!" />
+      </a>
+      <a href="https://firefox.com/" title="Tested on Firefox" target="_blank" rel="noopener">
+          <img src="/img/88x31/firefox.gif" alt="Tested on Firefox" />
+      </a>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer" title="Made with CSS" target="_blank" rel="noopener">
+          <img src="/img/88x31/css.png" alt="Made with CSS"/>
+      </a>
+      <a href="/rss.xml" title="RSS feed" target="_blank" rel="noopener">
+          <img src="/img/88x31/rss.png" alt="RSS feed"/>
+      </a>
+      <a id="mystery-site" href="#" title="Mystery Site">
+        <img src="/img/88x31/mysterysite.gif" alt="Mystery Site" />
+      </a>
+    </div>
+  ) : null}
 </footer>

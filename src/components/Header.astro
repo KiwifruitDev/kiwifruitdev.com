@@ -1,15 +1,18 @@
 ---
-const { currentPage = 'home' } = Astro.props;
+const { currentPage = 'home', container = "/" } = Astro.props;
 const navItems = [
   { label: 'Home', href: '/', page: 'home' },
   { label: 'Projects', href: '/projects', page: 'projects' },
   { label: 'Posts', href: '/posts/', page: 'posts' },
   { label: 'Socials', href: '/socials', page: 'socials' },
+  { label: 'Arkham: Revived', href: '/arkhamrevived/', page: 'arkhamrevived' },
 ];
+let logo = container == "/" ? "/img/kiwifruitdevlogo.svg" : "/img/arkhamrevived.png";
+let logodesc = container == "/" ? "KiwifruitDev logo" : "Arkham: Revived logo";
 ---
 <header class="header">
   <a class="logo" href="/" title="KiwifruitDev">
-    <img class="logo" src="/img/kiwifruitdevlogo.png" alt="KiwifruitDev logo" />
+    <img class="logo" src={logo} alt={logodesc} />
   </a>
   <nav class="navigation">
     <ul>
