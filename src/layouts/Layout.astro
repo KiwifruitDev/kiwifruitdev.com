@@ -14,6 +14,11 @@ const {
 const pageTitle = `KiwifruitDev - ${title}`;
 const pageUrl = `https://kiwifruitdev.com${page === 'home' ? '/' : `/${page}`}`;
 let background = (container == "/" ? "background motion-enabled" : "background");
+let background2 = (container == "/" ? "main-background" : "main-background-arkhamrevived");
+let background3 = (container == "/" ? "main-container" : "main-container-arkhamrevived");
+let background4 = (container == "/" ? "main" : "main-arkhamrevived");
+let titlefont = (container == "/" ? "page-title" : "page-title-arkhamrevived");
+let favicon = (container == "/" ? "favicon" : "arkhamrevived-favicon");
 ---
 <!doctype html>
 <html lang="en">
@@ -28,10 +33,10 @@ let background = (container == "/" ? "background motion-enabled" : "background")
 			href={new URL("rss.xml", Astro.site)}
 		/>
 
-		<link rel="icon" type="image/png" href={`${container}favicon.png`}>
-		<link rel="apple-touch-icon" href={`${container}favicon.png`}>
-		<link rel="shortcut icon" href={`${container}favicon.ico`}>
-		<link rel="icon" type="image/x-icon" href={`${container}favicon.ico`}>
+		<link rel="icon" type="image/png" href={`/${favicon}.png`}>
+		<link rel="apple-touch-icon" href={`/${favicon}.png`}>
+		<link rel="shortcut icon" href={`/${favicon}ico`}>
+		<link rel="icon" type="image/x-icon" href={`/${favicon}.ico`}>
 
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -67,18 +72,18 @@ let background = (container == "/" ? "background motion-enabled" : "background")
 			) : null}
 			<Header currentPage={page} container={container} />
 			<!-- Main -->
-			<div class="main-background">
+			<div class={background2}>
 				{prevPage ? (
 				<a id="back-btn" class="back-button" href={prevPage} aria-label="Back" data-override="true">←</a>
 				) : (
 				<a id="back-btn" class="back-button" href="#" aria-label="Back" style="display:none">←</a>
 				)}
-				<h1 class="page-title">{title}</h1>
+				<h1 class={titlefont}>{title}</h1>
 				{nextPage ? (
 					<a id="next-btn" class="next-button" href={nextPage} aria-label="Next">→</a>
 				) : null}
-				<div class="main-container">
-					<div class="main">
+				<div class={background3}>
+					<div class={background4}>
 						<slot />
 					</div>
 				</div>

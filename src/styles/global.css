@@ -183,21 +183,51 @@ a {
   border-radius: 12px;
   box-shadow: 2px 2px 0px black
 }
-.inactive {
+.page.inactive {
   background-color: #404040;
   border-color: #808080;
   transition: background-color 0.3s, border-color 0.3s;
 }
-.inactive:hover {
+.page.inactive:hover {
   background-color: #2B363A;
   border-color: #576C73;
 }
-.active {
+.page.active {
   background-color: #2E3A2B;
   border-color: #5E7357;
   transition: color 0.3s;
 }
-.active:hover {
+.page.active:hover {
+  color: lightgreen;
+}
+.page-arkhamrevived {
+  font-size: 19px;
+  font-weight: 300;
+  font-family: 'Cambria', sans-serif;
+  text-shadow: 2px 2px 0px black;
+  color: white;
+  text-decoration: none;
+  padding: 0px 6px 0px 6px;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 12px;
+  box-shadow: 2px 2px 0px black
+}
+.page-arkhamrevived.inactive {
+  background-color: #0C141E;
+  border-color: #48607D;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.page-arkhamrevived.inactive:hover {
+  background-color: #1E2628;
+  border-color: #576C73;
+}
+.page-arkhamrevived.active {
+  background-color: #222A2D;
+  border-color: #5E7357;
+  transition: color 0.3s;
+}
+.page-arkhamrevived.active:hover {
   color: lightgreen;
 }
 
@@ -212,6 +242,16 @@ a {
 .main-background {
   position: relative;
 }
+.main-background-arkhamrevived {
+  border-radius: 16px 16px 10px 10px;
+  max-width: 732px;
+  margin: 0 auto;
+  padding: 0px 4px 3px 4px;
+  background-color: #0F1A30;
+}
+.main-background-arkhamrevived {
+  position: relative;
+}
 .back-button {
   position: absolute;
   left: 16px;
@@ -223,6 +263,7 @@ a {
   background: transparent;
   border: none;
   z-index: 10;
+  text-shadow: 2px 2px 0px black;
 }
 .page-title {
   text-align: center;
@@ -233,15 +274,37 @@ a {
   margin: 0;
   color: white;
 }
+.page-title-arkhamrevived {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Cambria', sans-serif;
+  padding: 4px 0px 3px 0px;
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 0px black;
+}
 .main-container {
   padding: 10px 10px 10px 10px;
   border-radius: 8px;
   background-color: #808080;
 }
+
+.main-container-arkhamrevived {
+  padding: 10px 10px 10px 10px;
+  border-radius: 8px;
+  background-color: #48607D;
+}
 .main {
   border-radius: 8px;
   padding: 1px 19px 3px 19px;
   background-color: #505050;
+}
+.main-arkhamrevived {
+  border-radius: 8px;
+  padding: 1px 19px 3px 19px;
+  background-color: #0C141E;
 }
 
 .next-container {
@@ -258,6 +321,7 @@ a {
   background: transparent;
   border: none;
   z-index: 10;
+  text-shadow: 2px 2px 0px black;
 }
 .next-button:hover {
   color: lightgreen;
@@ -279,11 +343,18 @@ footer {
   margin: 0 auto;
   text-align: center;
   margin-top: 20px;
-  font-size: 20px;  
-  font-family: 'Munro', sans-serif;
   text-shadow: 2px 2px 0px black;
   color: white;
   text-decoration: none;
+}
+.footer {
+  font-size: 20px;
+  font-family: 'Munro', sans-serif;
+}
+.footer-arkhamrevived {
+  font-size: 19px;
+  font-weight: 300;
+  font-family: 'Cambria', sans-serif;
 }
 footer p {
   margin: 8px;

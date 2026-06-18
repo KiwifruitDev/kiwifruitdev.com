@@ -1,9 +1,10 @@
 ---
 const { container = "/" } = Astro.props;
+let font = (container == "/" ? "footer" : "footer-arkhamrevived");
 ---
 <footer>
   <hr class="footer-divider" />
-  <p>kiwifruitdev.com &copy; 2026 KiwifruitDev</p>
+  <p class={font}>kiwifruitdev.com &copy; 2026 KiwifruitDev</p>
   {container == "/" ? (
     <div class="badges">
       <a href="https://ublockorigin.com/" title="uBlock Origin Now!" target="_blank" rel="noopener">

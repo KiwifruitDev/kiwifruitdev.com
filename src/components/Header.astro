@@ -2,7 +2,6 @@
 const { currentPage = 'home', container = "/" } = Astro.props;
 const navItems = [
   { label: 'Home', href: '/', page: 'home' },
-  { label: 'Projects', href: '/projects', page: 'projects' },
   { label: 'Posts', href: '/posts/', page: 'posts' },
   { label: 'Socials', href: '/socials', page: 'socials' },
   { label: 'Arkham: Revived', href: '/arkhamrevived/', page: 'arkhamrevived' },
@@ -19,7 +18,7 @@ let logodesc = container == "/" ? "KiwifruitDev logo" : "Arkham: Revived logo";
       {navItems.map((item) => (
         <li>
           <a
-            class={`page ${item.page === currentPage ? 'active' : 'inactive'}`}
+            class={`${container == "/" ? "page" : "page-arkhamrevived"} ${item.page === currentPage ? 'active' : 'inactive'}`}
             href={item.href}
           >
             {item.label}
