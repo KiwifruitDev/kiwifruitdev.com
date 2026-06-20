@@ -89,6 +89,9 @@ let favicon = (container == "/" ? "favicon" : "arkhamrevived-favicon");
 				</div>
 			</div>
 			<script type="module">
+				document.addEventListener('DOMContentLoaded', function() {
+					document.getElementById('bg-video').play();
+				});
 				const backBtn = document.getElementById('back-btn');
 				if (backBtn && backBtn.getAttribute('data-override') !== 'true') {
 					const path = location.pathname || '/';
