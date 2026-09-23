@@ -8,3 +8,5 @@ pubDate: Tue, 04 Mar 2025 00:00:00 GMT
 prevPage: /arkhamrevived/xbox-tutorial
 ---
 Coming soon!
+
+You'll need this: [COALESCED_INT.BIN](/arkhamrevived/ps3/COALESCED_INT.BIN)
