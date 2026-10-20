@@ -22,6 +22,8 @@ Select a platform to view its install tutorial:
 - View the XenonHTTPnoS (Xbox 360 plugin) source code on [GitHub](https://github.com/KiwifruitDev/XenonHTTPnoS)
 - View the source code for this website on [GitHub](https://github.com/KiwifruitDev/kiwifruitdev.com)
 
+<iframe src="https://discord.com/widget?id=1444360529421406384&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
 ## Credits
 
 - Background video footage by [Batman Arkham Videos](https://www.youtube.com/watch?v=sFfUsXoxy-I)
