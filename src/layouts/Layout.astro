@@ -7,9 +7,7 @@ const {
 	container = "/",
     title,
     page = 'home',
-    description = "Welcome to my website! I'm KiwifruitDev, a software developer.",
-    nextPage,
-    prevPage
+    description = "Welcome to my website! I'm KiwifruitDev, a software developer."
 } = Astro.props;
 const pageTitle = `KiwifruitDev - ${title}`;
 const pageUrl = `https://kiwifruitdev.com${page === 'home' ? '/' : `/${page}`}`;
@@ -73,15 +71,7 @@ let favicon = (container == "/" ? "favicon" : "arkhamrevived-favicon");
 			<Header currentPage={page} container={container} />
 			<!-- Main -->
 			<div class={background2}>
-				{prevPage ? (
-				<a id="back-btn" class="back-button" href={prevPage} aria-label="Back" data-override="true">←</a>
-				) : (
-				<a id="back-btn" class="back-button" href="#" aria-label="Back" style="display:none">←</a>
-				)}
 				<h1 class={titlefont}>{title}</h1>
-				{nextPage ? (
-					<a id="next-btn" class="next-button" href={nextPage} aria-label="Next">→</a>
-				) : null}
 				<div class={background3}>
 					<div class={background4}>
 						<slot />

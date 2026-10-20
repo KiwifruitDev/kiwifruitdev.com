@@ -4,7 +4,6 @@ page: posts
 title: 'How to receive Fast-Scan TV with an SDR (2022-11-25)'
 description: 'This guide will show you how to receive Fast-Scan TV (FSTV) with an SDR.'
 pubDate: Mon, 25 Nov 2022 00:00:00 GMT
-nextPage: /posts/servers/
 ---
 This guide will show you how to receive Fast-Scan TV (FSTV) with an SDR.
 

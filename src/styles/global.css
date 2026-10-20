@@ -261,19 +261,6 @@ a {
 .main-background-arkhamrevived {
   position: relative;
 }
-.back-button {
-  position: absolute;
-  left: 16px;
-  top: 0px;
-  transform: none;
-  text-decoration: none;
-  font-size: 22px;
-  color: white;
-  background: transparent;
-  border: none;
-  z-index: 10;
-  text-shadow: 2px 2px 0px black;
-}
 .page-title {
   text-align: center;
   font-size: 20px;
@@ -318,22 +305,6 @@ a {
 
 .next-container {
   display: none;
-}
-.next-button {
-  position: absolute;
-  right: 16px;
-  top: 0px;
-  transform: none;
-  text-decoration: none;
-  font-size: 22px;
-  color: white;
-  background: transparent;
-  border: none;
-  z-index: 10;
-  text-shadow: 2px 2px 0px black;
-}
-.next-button:hover {
-  color: lightgreen;
 }
 .center {
   text-align: center;

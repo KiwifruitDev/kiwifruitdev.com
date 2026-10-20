@@ -5,8 +5,6 @@ page: arkhamrevived
 title: 'Arkham: Revived'
 description: 'Arkham: Revived'
 pubDate: Wed, 17 Jun 2026 00:00:00 GMT
-prevPage: /socials
-nextPage: pc-tutorial
 ---
 Replacement auth server for [Batman: Arkham Origins](https://store.steampowered.com/app/209000/Batman_Arkham_Origins/) online multiplayer by KiwifruitDev.
 

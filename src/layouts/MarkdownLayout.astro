@@ -3,6 +3,6 @@ import Layout from '../layouts/Layout.astro';
 const { frontmatter } = Astro.props;
 const container = !frontmatter.container ? "/" : frontmatter.container;
 ---
-<Layout container={container} title={frontmatter.title} page={frontmatter.page} description={frontmatter.description} nextPage={frontmatter.nextPage} prevPage={frontmatter.prevPage}>
+<Layout container={container} title={frontmatter.title} page={frontmatter.page} description={frontmatter.description}>
     <slot />
 </Layout>

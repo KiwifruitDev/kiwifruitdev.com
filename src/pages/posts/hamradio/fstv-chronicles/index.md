@@ -4,7 +4,6 @@ page: posts
 title: 'The Fast-Scan TV Chronicles'
 description: 'Join me as I explore the world of Fast-Scan Television! It''s practically television over amateur radio.'
 pubDate: Mon, 26 Nov 2022 00:00:00 GMT
-nextPage: /posts/hamradio/fstv-chronicles/2022-11-21
 ---
 Join me as I explore the world of Fast-Scan Television! It's practically television over amateur radio.
 

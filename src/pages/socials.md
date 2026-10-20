@@ -4,8 +4,6 @@ page: socials
 title: 'Socials'
 description: 'Check out my pages on these platforms.'
 pubDate: Mon, 15 Jun 2026 00:00:00 GMT
-prevPage: /posts/servers/arkhamrevived
-nextPage: arkhamrevived
 ---
 
 Check out my pages on these platforms:

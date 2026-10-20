@@ -4,7 +4,6 @@ page: home
 title: 'Home'
 description: 'Welcome to my website! I''m KiwifruitDev, a software developer.'
 pubDate: Mon, 15 Jun 2026 00:00:00 GMT
-nextPage: /posts/
 ---
 Welcome to my website! I'm KiwifruitDev, a software developer.
 
