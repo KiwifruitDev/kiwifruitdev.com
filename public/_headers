@@ -1,0 +1,5 @@
+# Applied by hosts that support custom headers (Cloudflare Pages, Netlify).
+# GitHub Pages ignores this file; coi-sw.js adds the same headers at runtime.
+/arkhamrevived/ps3-tutorial/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp

@@ -1,0 +1,37 @@
+---
+import MarkdownLayout from '../../layouts/MarkdownLayout.astro';
+
+const frontmatter = {
+	container: '/arkhamrevived/',
+	page: 'arkhamrevived',
+	title: 'Arkham: Revived - PlayStation 3 Tutorial',
+	description: 'Patch Batman: Arkham Origins on PlayStation 3 for Arkham: Revived. Works on OFW backup archives and CFW/HEN consoles.',
+};
+---
+<MarkdownLayout frontmatter={frontmatter}>
+	<link rel="stylesheet" href="/arkhamrevived/ps3-tutorial/app/ui.css" />
+	<p>
+		This page patches <strong>Batman: Arkham Origins</strong> on PlayStation 3 so it connects to
+		Arkham: Revived. The tool runs entirely in your browser: the official 1.06 title update is
+		downloaded from this site, decrypted locally, and either merged into a PS3 Backup Utility
+		backup or packaged for multiMAN (mmCM). Nothing is uploaded.
+	</p>
+	<div id="arkham-patcher">
+		<p class="ak-busy">Loading the patcher…</p>
+		<noscript>
+			<p class="ak-error-text">This tool needs JavaScript. Enable it and reload the page.</p>
+		</noscript>
+	</div>
+	<noscript>
+		<p>
+			You can also download the title updates directly:
+			<a href="/arkhamrevived/ps3/UP1018-BLUS31147_00-BATMANORIGIPATCH-A0106-V0100-PE.pkg">US disc</a>,
+			<a href="/arkhamrevived/ps3/UP1018-NPUB31261_00-BATMANARKHAMORIG-A0106-V0100-PE.pkg">US digital</a>,
+			<a href="/arkhamrevived/ps3/EP1018-BLES01784_00-BATMANORIGIPATCH-A0106-V0100-PE.pkg">EU disc</a>,
+			<a href="/arkhamrevived/ps3/EP1018-NPEB01414_00-BATMANORIGINS001-A0106-V0100-PE.pkg">EU digital</a>,
+			<a href="/arkhamrevived/ps3/UP1018-BLUS31207_00-BATMANORIGIPATCH-A0106-V0100-PE.pkg">BR disc</a>,
+			<a href="/arkhamrevived/ps3/UP1018-NPUB31264_00-BATMANARKHAMORIG-A0106-V0100-PE.pkg">BR digital</a>.
+		</p>
+	</noscript>
+	<script is:inline type="module" src="/arkhamrevived/ps3-tutorial/app/app.js"></script>
+</MarkdownLayout>
