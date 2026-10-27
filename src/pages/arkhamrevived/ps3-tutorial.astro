@@ -10,6 +10,32 @@ const frontmatter = {
 ---
 <MarkdownLayout frontmatter={frontmatter}>
 	<link rel="stylesheet" href="/arkhamrevived/ps3-tutorial/app/ui.css" />
+
+	<style>
+		.kofi-button {
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			background-color: #72a4f2;
+			color: #fff;
+			padding: 8px 14px;
+			border-radius: 7px;
+			box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+			font-weight: 700;
+			text-decoration: none;
+			line-height: 1;
+		}
+		.kofi-button:hover {
+			opacity: 0.85;
+			color: #fff;
+		}
+		.kofi-icon {
+			height: 15px;
+			width: 22px;
+			border: 0;
+		}
+	</style>
+
 	<a href="/arkhamrevived/" class="back-link">Back to Arkham: Revived</a>
 
 	<p>
@@ -63,14 +89,29 @@ const frontmatter = {
 		donating to my Ko-fi page. I'd really appreciate it!
 	</p>
 
-	<div id="kofi-widget-container">
-		{/* crossorigin lets the widget load inside the cross-origin isolated page (COEP) */}
-		<script type='text/javascript' crossorigin='anonymous' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-		<script type='text/javascript'>
-			kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'D1D01P21FF');
-			kofiwidget2.draw();
-		</script>
-	</div>
+	<!-- The official Ko-fi widget cannot run here: this page is cross-origin
+	isolated (COEP: require-corp), and the widget injects images without CORS.
+	The same button is rendered inline instead; crossorigin="anonymous" makes the
+	icon a CORS request, which the Ko-fi CDN allows. -->
+	<p>
+		<a
+			class="kofi-button"
+			href="https://ko-fi.com/D1D01P21FF"
+			target="_blank"
+			rel="noopener noreferrer"
+			title="Support me on ko-fi.com"
+		>
+			<img
+				class="kofi-icon"
+				src="https://storage.ko-fi.com/cdn/cup-border.png"
+				alt=""
+				width="22"
+				height="15"
+				crossorigin="anonymous"
+			/>
+			Support me on Ko-fi
+		</a>
+	</p>
 
 	<br/>
 
