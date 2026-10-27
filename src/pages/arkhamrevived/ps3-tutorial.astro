@@ -64,7 +64,8 @@ const frontmatter = {
 	</p>
 
 	<div id="kofi-widget-container">
-		<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+		{/* crossorigin lets the widget load inside the cross-origin isolated page (COEP) */}
+		<script type='text/javascript' crossorigin='anonymous' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
 		<script type='text/javascript'>
 			kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'D1D01P21FF');
 			kofiwidget2.draw();

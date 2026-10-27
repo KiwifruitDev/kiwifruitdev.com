@@ -322,7 +322,9 @@ export class Wizard {
     this.stepLabel.textContent = step ? `Step ${this.index + 1} of ${this.steps.length}` : '';
     const canLeave = this.canLeave();
     this.back.disabled = this.index === 0 || !canLeave;
-    const nextLabel = step?.nextLabel?.(this) ?? 'Next';
+    // A step that defines nextLabel() can hide the button by returning null,
+    // which is how the question pages force an answer.
+    const nextLabel = step?.nextLabel ? step.nextLabel(this) : 'Next';
     this.next.textContent = nextLabel ?? 'Next';
     this.next.hidden = !nextLabel;
     this.next.disabled = Boolean(step?.canNext && !step.canNext());
