@@ -10,28 +10,89 @@ const frontmatter = {
 ---
 <MarkdownLayout frontmatter={frontmatter}>
 	<link rel="stylesheet" href="/arkhamrevived/ps3-tutorial/app/ui.css" />
+	<a href="/arkhamrevived/" class="back-link">Back to Arkham: Revived</a>
+
 	<p>
 		This page patches <strong>Batman: Arkham Origins</strong> on PlayStation 3 so it connects to
-		Arkham: Revived. The tool runs entirely in your browser: the official 1.06 title update is
-		downloaded from this site, decrypted locally, and either merged into a PS3 Backup Utility
-		backup or packaged for multiMAN (mmCM). Nothing is uploaded.
+		Arkham: Revived Redux. The tool runs entirely in your browser, which means no downloads or uploads!
 	</p>
+
+	<!-- coming soon!
+	<p>
+		Follow this video guide for help patching Batman: Arkham Origins and connecting to
+		Arkham: Revived Redux:
+	</p>
+
+	<div style="position: relative; width: 100%; aspect-ratio: 16 / 9;">
+		<iframe
+			src=""
+			title="Arkham: Revived PlayStation 3 Tutorial"
+			style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin"
+			allowfullscreen
+		></iframe>
+	</div>
+
+	<br />
+	<br />
+	-->
+
 	<div id="arkham-patcher">
-		<p class="ak-busy">Loading the patcher…</p>
+		<p class="ak-busy">Loading the patcher, this may take a while so please wait...<br>(If it doesn't load, try a different browser like Chrome or Edge)</p>
 		<noscript>
 			<p class="ak-error-text">This tool needs JavaScript. Enable it and reload the page.</p>
 		</noscript>
 	</div>
-	<noscript>
-		<p>
-			You can also download the title updates directly:
-			<a href="/arkhamrevived/ps3/UP1018-BLUS31147_00-BATMANORIGIPATCH-A0106-V0100-PE.pkg">US disc</a>,
-			<a href="/arkhamrevived/ps3/UP1018-NPUB31261_00-BATMANARKHAMORIG-A0106-V0100-PE.pkg">US digital</a>,
-			<a href="/arkhamrevived/ps3/EP1018-BLES01784_00-BATMANORIGIPATCH-A0106-V0100-PE.pkg">EU disc</a>,
-			<a href="/arkhamrevived/ps3/EP1018-NPEB01414_00-BATMANORIGINS001-A0106-V0100-PE.pkg">EU digital</a>,
-			<a href="/arkhamrevived/ps3/UP1018-BLUS31207_00-BATMANORIGIPATCH-A0106-V0100-PE.pkg">BR disc</a>,
-			<a href="/arkhamrevived/ps3/UP1018-NPUB31264_00-BATMANARKHAMORIG-A0106-V0100-PE.pkg">BR digital</a>.
-		</p>
-	</noscript>
+
+	<h3>Join the Community</h3>
+	<p>
+		Need help getting connected, troubleshooting an issue, or finding other players?<br/><br/>Join the Arkham: Revived Redux Discord community for support and matchmaking:
+	</p>
+	<p>
+		<a href="https://discord.gg/7BneAcgvZh" target="_blank" rel="noopener noreferrer" title="Join the Arkham: Revived Discord">
+			<img src="/img/discord.png" alt="Join the Arkham: Revived Discord" style="height: 40px; vertical-align: middle;" />
+		</a>
+		<br/>
+		<br/>
+	</p>
+
+	<h3>Support Development</h3>
+	<p>
+		If you enjoy Arkham: Revived Redux and would like to support its development, consider
+		donating to my Ko-fi page. I'd really appreciate it!
+	</p>
+
+	<div id="kofi-widget-container">
+		<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+		<script type='text/javascript'>
+			kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'D1D01P21FF');
+			kofiwidget2.draw();
+		</script>
+	</div>
+
+	<br/>
+
+	<h3>Source Code</h3>
+	<p>
+		Arkham: Revived and its patching tools are built with open-source projects.
+		<br/><br/>
+		Explore the repositories below to see how everything works:
+	</p>
+	<ul>
+		<li>
+			<a href="https://github.com/KiwifruitDev/ArkhamRevivedWorker" target="_blank" rel="noopener noreferrer">ArkhamRevivedWorker</a>: Cloudflare Worker running the Arkham: Revived Redux server.
+		</li>
+		<li>
+			<a href="https://github.com/KiwifruitDev/arkham-patcher" target="_blank" rel="noopener noreferrer">arkham-patcher</a>: Source code for this browser-based PS3 backup patcher.
+		</li>
+		<li>
+			<a href="https://github.com/KiwifruitDev/ps3xport-wasm" target="_blank" rel="noopener noreferrer">ps3xport-wasm</a>: WebAssembly port of ps3xport used by the browser patcher.
+		</li>
+		<li>
+			<a href="https://github.com/kakaroto/ps3xport" target="_blank" rel="noopener noreferrer">ps3xport</a>: Original PS3 backup utility that the WebAssembly port is based on.
+		</li>
+	</ul>
+
 	<script is:inline type="module" src="/arkhamrevived/ps3-tutorial/app/app.js"></script>
 </MarkdownLayout>

@@ -447,3 +447,10 @@ video.video-center {
   z-index: -20; /* behind page content */
   pointer-events: none; /* let clicks pass through */
 }
+
+.back-link {
+  display: inline-block;
+  margin-top: 16px;
+  text-decoration: none;
+  font-size: 12px;
+}

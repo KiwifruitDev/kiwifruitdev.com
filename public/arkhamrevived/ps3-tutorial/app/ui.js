@@ -132,7 +132,7 @@ export class TaskProgress {
     this.finished = false;
 
     this.bar = h('div', { class: 'ak-bar' }, h('div', { class: 'ak-bar-fill' }));
-    this.status = h('p', { class: 'ak-progress-status' }, 'Preparing…');
+    this.status = h('p', { class: 'ak-progress-status' }, 'Preparing...');
     this.detail = h('p', { class: 'ak-progress-detail' }, '');
     this.eta = h('span', { class: 'ak-progress-eta' }, 'ETA -');
     this.elapsed = h('span', { class: 'ak-progress-elapsed' }, 'Elapsed 0:00');
@@ -163,7 +163,7 @@ export class TaskProgress {
       this.cancelButton.hidden = false;
       this.cancelButton.onclick = () => {
         this.cancelButton.disabled = true;
-        this.cancelButton.textContent = 'Cancelling…';
+        this.cancelButton.textContent = 'Cancelling...';
         onCancel?.();
       };
     } else {

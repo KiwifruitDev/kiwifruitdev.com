@@ -6,24 +6,36 @@ title: 'Arkham: Revived'
 description: 'Arkham: Revived'
 pubDate: Wed, 17 Jun 2026 00:00:00 GMT
 ---
-Replacement auth server for [Batman: Arkham Origins](https://store.steampowered.com/app/209000/Batman_Arkham_Origins/) online multiplayer by KiwifruitDev.
+Arkham: Revived Redux restores online multiplayer for [Batman: Arkham Origins](https://store.steampowered.com/app/209000/Batman_Arkham_Origins/) through a replacement authentication server.
 
-Select a platform to view its install tutorial:
+Select a platform to start installing the necessary patches:
 
-- [PlayStation 3](ps3-tutorial)
+- [PlayStation 3](ps3-tutorial) (supports OFW, HFW/HEN, and CFW)
 
-PC and Xbox 360 versions are currently on-hold.
+At the moment, PC and Xbox 360 versions of Arkham: Revived Redux are currently on hold.
 
-## Links
+For PC users, you can download and use the original client for the time being:
 
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'D1D01P21FF');kofiwidget2.draw();</script> 
+- Download [Arkham: Revived (self-hosted)](https://github.com/KiwifruitDev/ArkhamRevivedSelfHosted) on GitHub.
 
-- Join the [Discord](https://discord.gg/7BneAcgvZh) to find matches and ask for support
-- View the Cloudflare Worker (Arkham: Revived Worker) source code on [GitHub](https://github.com/KiwifruitDev/ArkhamRevivedWorker)
-- View the source code for this website on [GitHub](https://github.com/KiwifruitDev/kiwifruitdev.com)
+### Join the Community
 
-<iframe src="https://discord.com/widget?id=1444360529421406384&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+Need help getting connected, troubleshooting an issue, or finding other players?
 
-## Credits
+Join the Arkham: Revived Redux Discord community for support and matchmaking:
+
+[![Join the Arkham: Revived Discord](/img/discord.png)](https://discord.gg/7BneAcgvZh)
+
+### Support Development
+
+If you enjoy Arkham: Revived Redux and would like to support its development, consider donating to my Ko-fi page. I'd really appreciate it!
+
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+<script type='text/javascript'>
+    kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'D1D01P21FF');
+    kofiwidget2.draw();
+</script>
+
+### Credits
 
 - Background video footage by [Batman Arkham Videos](https://www.youtube.com/watch?v=sFfUsXoxy-I)

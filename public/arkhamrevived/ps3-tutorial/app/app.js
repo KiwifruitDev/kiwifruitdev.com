@@ -225,7 +225,7 @@ const selectStep = {
       controls.push(h('p', { class: 'ak-note' }, 'Recommended on Chrome/Edge: the patched files are written straight to the USB drive.'));
     } else if (!state.mobile) {
       controls.push(h('label', { class: 'ak-button ak-button-file' },
-        state.backupBusy ? 'Reading the backup…' : 'Select backup folder',
+        state.backupBusy ? 'Reading the backup...' : 'Select backup folder',
         h('input', {
           type: 'file', multiple: true, webkitdirectory: '', directory: '',
           disabled: state.backupBusy,
@@ -235,7 +235,7 @@ const selectStep = {
       controls.push(h('p', { class: 'ak-note' }, 'This browser cannot write to the USB drive, so the patched files will be downloaded for you to copy across.'));
     } else {
       controls.push(h('label', { class: 'ak-button ak-button-file' },
-        state.backupBusy ? 'Reading the backup…' : 'Select backup files',
+        state.backupBusy ? 'Reading the backup...' : 'Select backup files',
         h('input', {
           type: 'file', multiple: true, accept: '.dat,application/octet-stream',
           disabled: state.backupBusy,
@@ -309,14 +309,14 @@ async function loadDirectoryBackup(dirHandle, { kind = 'folder' } = {}) {
   state.backupError = null;
   state.backup = null;
   wizard.refresh();
-  if (state.importLine) state.importLine.textContent = 'Reading the backup index…';
+  if (state.importLine) state.importLine.textContent = 'Reading the backup index...';
   try {
     const instance = await getEngine();
     const backup = await readBackup({
       engine: instance,
       dirHandle,
       onProgress: text => {
-        if (state.importLine) state.importLine.textContent = `${text}…`;
+        if (state.importLine) state.importLine.textContent = `${text}...`;
       },
     });
     state.backup = { ...backup, dirHandle, name: dirHandle.name, kind };
@@ -349,7 +349,7 @@ async function importFileSelection(fileList) {
     return;
   }
   state.backupBusy = true;
-  state.importLine = h('p', { class: 'ak-busy' }, 'Checking browser storage…');
+  state.importLine = h('p', { class: 'ak-busy' }, 'Checking browser storage...');
   wizard.refresh();
   try {
     if (!navigator.storage?.getDirectory) {
@@ -367,7 +367,7 @@ async function importFileSelection(fileList) {
     state.importLine = line;
     for (const file of wanted) {
       const name = basename(file.webkitRelativePath || file.name);
-      line.textContent = `Copying ${name} into browser storage…`;
+      line.textContent = `Copying ${name} into browser storage...`;
       const handle = await dirHandle.getFileHandle(name, { create: true });
       const writable = await handle.createWritable();
       try {
@@ -376,7 +376,7 @@ async function importFileSelection(fileList) {
           const buffer = await file.slice(offset, end).arrayBuffer();
           await writable.write(buffer);
           done += buffer.byteLength;
-          line.textContent = `Copying ${name} into browser storage… ${formatBytes(done)} of ${formatBytes(total)}`;
+          line.textContent = `Copying ${name} into browser storage... ${formatBytes(done)} of ${formatBytes(total)}`;
         }
       } finally {
         await writable.close();
