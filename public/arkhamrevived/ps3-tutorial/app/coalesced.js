@@ -11,7 +11,7 @@ const HTTP_SECTION = 'Default__GDHttp GDHttp';
 const HTTP_INI = 'bmgame/config/ps3-bmnetvars.ini';
 const HTTP_SETTINGS = [
   ['TitleFileName', 'dummy.json'],
-  ['Settings', '(BaseURL="https://arkhamrevived.kiwifruitdev.com/")'],
+  ['Settings', '(BaseURL="http://arkhamrevived.kiwifruitdev.com/")'],
 ];
 
 // Arkham: Revived replaces the startup movie, so the engine must not wait for
@@ -23,7 +23,7 @@ const MOVIE_SETTINGS = [['bForceNoMovies', 'TRUE']];
 
 const FIRETEAM_SECTION = 'Network';
 const FIRETEAM_KEY = 'CouldNotConnectFireteam';
-const FIRETEAM_VALUE = String.raw`There was an error connecting to Arkham: Revived Redux.\nIf you're using CFW or HEN, did you disable syscalls?\nCheck out https://kiwifruitdev.com/arkhamrevived/\nJoin the Discord at https://discord.gg/7BneAcgvZh\nError`;
+const FIRETEAM_VALUE = String.raw`There was an error connecting to Arkham: Revived Redux. If you're using CFW or HEN, did you disable syscalls? Check out https://kiwifruitdev.com/arkhamrevived/ Join the Discord at https://discord.gg/7BneAcgvZh Error`;
 
 function normalizeInternalName(name) {
   const segments = name.replace(/\\/g, '/').split('/');
